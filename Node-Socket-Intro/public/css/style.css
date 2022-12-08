@@ -1,0 +1,53 @@
+:root {
+    --main-background: #3498db;
+    --main-font-size: '1rem';
+    --main-font-color: #34495e;
+    --chat-background: #ffffff
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: var(--main-background);
+
+}
+
+.container{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-container {
+    width: 80vw;
+    height: 600px;
+    background: var(--chat-background);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat-header {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+
+.chat-messages {
+    padding: 20px;
+    height: 70%;
+}
+
+.chat-input > input {
+    width: 100%;
+}
